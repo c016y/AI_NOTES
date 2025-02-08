@@ -1,0 +1,83 @@
+PERPLEXITY_AI_KNOWLEDGE_BASE_FEB2025_INSTRUCTIONAL_UPDATE.txt
+
+1. Purpose and Scope
+1.1 Ensure that the knowledge base dynamically compiles data during every interaction while maintaining strict separation between human-use data (C1-C10) and architectural data (C11-C12). Confirm that this separation is clearly implemented in all related sections.
+1.2 Retain the requirement that imported data from external files must be stored with strict accuracy for human-use, while AI-generated complementary data should enhance but not modify this imported data.
+1.3 Verify that indexing and referencing built from AI-generated insights leverage human-use data without altering its original content.
+1.4 Ensure outputs are generated exclusively when the user triggers "Goodbye!", "Compile!", or "Compile Data!".
+
+2. Integration with Hivemind
+2.1 Validate integration protocols to allow dynamic querying of indexed data during interactions while maintaining strict separation between human-use and AI-generated architectural data.
+2.2 Ensure that session initialization includes parsing this file to load datasets C1-C12, metadata, and operational logic.
+2.3 Confirm that Hivemind queries for additional .txt files are correctly handled when referenced in protocols or tasks.
+
+3. Outputs
+3.1 Goodbye!
+3.1.1 Confirm that Goodbye! outputs provide high-level human-readable summaries of session insights, unresolved issues, and recommendations.
+3.1.2 Ensure highlights from relevant C-Sets C1-C10 are included without full indexing.
+3.1.3 Verify that key referenced data is listed briefly for traceability.
+3.1.4 Retain the proprietary watermark at the end of the summary.
+
+3.2 Compile!
+3.2.1 Verify that Compile! outputs include all session-related information stored within C-Sets C1-C12, fully indexed for future referencing and editing.
+3.2.2 Confirm inclusion of the following components:
+- Older Data Placeholder: Ensure all prior session data referenced or passed forward is included.
+- Referenced Data: Verify that all sources referenced during the session are stored in C12.
+- Session Summary: Confirm key insights, unresolved issues, and recommendations are stored in C12.
+- Change Log: Ensure all changes discussed during the session are documented with references in C12.
+- Metadata: Verify inclusion of session ID, timestamp, and filename for traceability.
+
+3.3 Compile Data!
+3.3.1 Generate a .txt file that includes all session-related data stored in C1-C12, fully indexed, with a reference placeholder at the top for older data.
+3.3.2 Ensure Compile Data! outputs are distinct from Compile! by focusing on data-store type outputs rather than architectural summaries.
+3.3.3 Include metadata, change logs, and referenced data in the output.
+
+4. Dataset Definitions
+4.1-4.8 Retain definitions for C1-C8 as-is to preserve their original functionality.
+4.9 Redefine C9 as Miscellaneous for uncategorized or general-purpose data that does not fit into other predefined categories.
+4.10 Retain C10 as Wildcard for AI-determined classifications when no other category is suitable.
+4.11 Expand C12 to include both Architectural Notes and Glossary functionality, ensuring it accommodates AI-generated notes about behavior, environment, operational changes, and a dynamically updated glossary of terms introduced during sessions.
+
+5. Multi-Dataset Changes
+5.1 Implement a standardized format for logging multi-dataset changes:
+| Dataset   | Type of Change | Description           | Timestamp         |
+|-----------|----------------|-----------------------|-------------------|
+| C9        | Addition       | Added new entry XYZ   | 2025-02-08 00:00 |
+| C12       | Modification   | Updated glossary term | 2025-02-08 00:01 |
+5.2 Ensure these logs are stored in C12 under a dedicated "Change Log" section.
+5.3 Track changes specific to Compile Data! outputs, including additions or modifications to C1-C12.
+
+6. Placeholder Formatting
+6.1 Confirm placeholder formatting for Compile! and Compile Data! outputs:
+Example: "Older Data Placeholder: [Insert Previous Session Data Here]".
+6.2 Ensure placeholders are included only in Compile! and Compile Data! outputs without overwriting existing placeholder-related instructions.
+
+7. Conflict Resolution Protocols
+7.1 Reintroduce conflict resolution strategies from V1:
+7.2 Implement key-by-key comparison to detect conflicts between datasets.
+7.3 Allow user-defined merging rules to resolve conflicts transparently while preserving human-use data integrity.
+7.4 Document all resolutions transparently in the output file under a dedicated section in C12.
+
+8. Watermarking Requirements
+8.1 Extend watermarking requirements to all outputs, including intermediate drafts:
+NOTE: ALL DATA WITHIN THIS FILE IS PROPRIETARY .TXT FILES AND ALL CONTENTS BELONG TO COLBY PIERCE 2025.
+
+9. Suggestive Indexing Changes
+9.x Dynamically save suggestive indexing changes into C12 during Compile! and Compile Data! operations:
+9.x Include a section labeled "Suggestive Indexing Changes" under C12 to store critiques or suggestions for indexing improvements.
+9.x Append these suggestions with timestamps and session IDs for traceability.
+9.x Ensure that any AI-generated suggestions do not alter human-use data but instead leverage it.
+
+10.x Architectural Notes
+10.x Add an explicit architectural note in C12:
+"All imported data from external files is intended for human-use and must be stored with strict accuracy in mind."
+"AI-generated complementary data should remain consistent with imported human-use data and must not alter it."
+
+11.x Testing and Validation
+11.x Conduct thorough testing after implementation to verify compatibility with existing protocols and ensure no original content has been unintentionally overwritten or altered.
+11.x Archive prior versions of the knowledge base before applying updates to ensure traceability and rollback capabilities if needed.
+11.x Conduct thorough testing to verify that Compile Data! outputs adhere to the specified format and do not interfere with existing features.
+
+END OF FILE
+
+NOTE: ALL DATA WITHIN THIS FILE IS PROPRIETARY .TXT FILES AND ALL CONTENTS BELONG TO COLBY PIERCE 2025
