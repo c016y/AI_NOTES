@@ -1,4 +1,4 @@
-PERPLEXITY_AI_KNOWLEDGE_BASE_FEB2025_INSTRUCTIONAL_UPDATE.txt
+AI_KNOWLEDGE_BASE_250208.txt
 
 1. Purpose and Scope
 1.1 Ensure that the knowledge base dynamically compiles data during every interaction while maintaining strict separation between human-use data (C1-C10) and architectural data (C11-C12). Confirm that this separation is clearly implemented in all related sections.
