@@ -1,0 +1,85 @@
+### PERPLEXITY_AI_KNOWLEDGE_BASE_FEB2025
+
+#### [Older Data Placeholder]
+- This section will include all prior session data referenced or passed forward.
+
+---
+
+#### Purpose and Scope
+- [1.1] Dynamically compile a .txt knowledge base during every interaction.
+- [1.2] Reference this file as a foundational dataset to initialize session context, including datasets C1-C12, glossary C11, metadata, and operational logic.
+- [1.3] Enable integration with other .txt files via Hivemind for seamless data access.
+- [1.4] Account for initialization by dynamically appending new sections as needed.
+- [1.5] Outputs are generated exclusively when the user triggers "Goodbye!" or "Compile!".
+- [1.6] Ensure all outputs include a placeholder for older data at the top, inside of `[]`.
+- [1.7] The C-Sets (C1-C10) are the primary repositories for human-relevant data. All other sections serve as supporting architecture to facilitate AI-human interaction and ensure proper organization and traceability.
+- [1.8] All "Goodbye!" and "Compile!" outputs must be watermarked with the following text:  
+  NOTE: ALL DATA WITHIN THIS FILE IS PROPRIETARY. ".TXT" FILES AND ALL CONTENTS BELONG TO COLBY PIERCE 2025.
+- [1.9] Introduce a new dataset category, **C12: Architectural Notes**, for storing AI-generated notes about behavior, environment, and operational changes.
+- [1.10] Distinguish between "Goodbye!" (human-readable summaries) and "Compile!" (full `.txt` outputs):
+  - Use "Goodbye!" when generating summaries for meetings or human reference.
+  - Use "Compile!" when preparing structured `.txt` files for AI handoffs or archival purposes.
+
+---
+
+#### Output Format
+- [2.1] Outputs are generated when the user says "Goodbye!" or "Compile!" and must follow distinct formats based on their purpose:
+  - [2.1.1] For "Goodbye!":
+    - Provide a high-level human-readable summary of session insights, unresolved issues, and recommendations.
+    - Include highlights from relevant C-Sets (C1-C10) but omit full indexing.
+    - List key referenced data briefly for traceability.
+    - Include a proprietary watermark at the end of the summary.
+  - [2.1.2] For "Compile!":
+    - Include all session-related information stored within C-Sets (C1-C12), fully indexed for future referencing and editing:
+      - **[Older Data Placeholder]**: Include all prior session data referenced or passed forward.
+      - **Referenced Data (Stored in C12)**: List all sources referenced during the session.
+      - **Session Summary (Stored in C12)**: Provide key insights, unresolved issues, and recommendations.
+      - **Change Log (Stored in C12)**: Document all changes discussed during the session with references:
+        - [2.1.2.4.1] Data-Level Changes: Additions or modifications to C-set categories (C1-C10).
+        - [2.1.2.4.2] Structural Changes: Updates to protocols, architecture, or operational logic.
+      - **Session Metadata (Stored in C12)**: Include Session ID, timestamp, and filename for traceability.
+
+---
+
+#### C-Set Categories
+- [3.1] The following predefined categories (C1-C12) are used for organizing data:
+  - [3.1.1] **C1: Scheduling** - For time management, appointments, and deadlines.
+  - [3.1.2] **C2: Logistics** - For travel plans, inventory, or supply chain details.
+  - [3.1.3] **C3: Communication** - For emails, messages, and contact information.
+  - [3.1.4] **C4: Financials** - For budgets, expenses, and financial reports.
+  - [3.1.5] **C5: Research** - For studies, articles, and academic references.
+  - [3.1.6] **C6: Tasks** - For to-do lists and task management.
+  - [3.1.7] **C7: Technical Data** - For specifications, system logs, or technical documentation.
+  - [3.1.8] **C8: User Preferences** - For user-specific settings or preferences.
+  - [3.1.9] **C9: Glossary (Dynamic)**:
+    - Dynamically updated with new terms introduced during sessions.
+    - Includes definitions, timestamps, and references for traceability.
+  - [3.1.10] **C10: Miscellaneous** - For uncategorized or general-purpose data.
+  - [3.1.11] **C12: Architectural Notes**:
+    - Store AI-generated notes about behavior, environment, and operational changes.
+    - Include metadata, change logs, referenced data, and session summaries from each interaction.
+
+---
+
+#### Training AI Models
+- [8.x...] Use trainable AI models capable of achieving high accuracy with limited labeled samples.
+
+---
+
+#### Managing Data Overlap
+- [9.x...] Implement multi-label classification for documents relevant to multiple C-Sets.
+
+---
+
+#### Hivemind Integration
+- [4.x...] The Hivemind protocol allows dynamic querying of indexed data during interactions.
+
+---
+
+#### Change Tracking
+- [10.x...] Track all additions or modifications to C12: Architectural Notes as part of the compiled output.
+
+---
+
+### Watermark
+NOTE: ALL DATA WITHIN THIS FILE IS PROPRIETARY ".TXT" FILES AND ALL CONTENTS BELONG TO COLBY PIERCE 2025.
